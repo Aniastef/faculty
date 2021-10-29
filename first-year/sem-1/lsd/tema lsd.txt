@@ -1,0 +1,9 @@
+let rec oricecifra numar baza cifra=
+    if numar=0 then 0
+    else if (numar mod baza)=cifra then oricecifra(numar/baza)(baza)(cifra)+1
+    else oricecifra(numar/baza)(baza)(cifra);;
+    
+    oricecifra 1452312 5 2;;
+    oricecifra 453543 4 3;;
+    oricecifra 123 2 1;;
+
